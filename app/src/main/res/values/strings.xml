@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AidlDome</string>
+    <string name="app_user_name">姓名：%1$s</string>
+    <string name="app_user_age">年龄：%1$s</string>
+
+    <string name="app_fruit_name">水果名称：%1$s</string>
+    <string name="app_fruit_age">水果时间：%1$s</string>
+</resources>

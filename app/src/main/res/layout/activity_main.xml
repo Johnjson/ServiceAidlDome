@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:text="点击开始本地service,\n service就会通过aidl传到UI层刷新界面的数据"/>
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:text="姓名："/>
+
+    <TextView
+        android:id="@+id/tvAge"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:text="年龄："/>
+    <Button
+        android:id="@+id/localButton"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:text="开始本地service"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="46dp" />
+
+    <Button
+        android:id="@+id/localButton2"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:text="本地数据传给service"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="46dp" />
+
+    <Button
+        android:id="@+id/localButton1"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:text="解绑本地service"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="196dp"
+        tools:layout_editor_absoluteY="46dp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:text="点击开始远程service,\n service就会通过aidl传到UI层刷新界面的数据"/>
+    <TextView
+        android:id="@+id/tvFruitName"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:text="水果名称："/>
+
+    <TextView
+        android:id="@+id/tvFruitAge"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:text="水果时间："/>
+
+    <Button
+        android:id="@+id/theRemoteButton"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:text="开始远程service"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="183dp" />
+    <Button
+        android:id="@+id/theRemoteButton2"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:text="本地数据传给远程service"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="46dp" />
+    <Button
+        android:id="@+id/theRemoteButton1"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:text="解绑远程service"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="196dp"
+        tools:layout_editor_absoluteY="183dp" />
+
+</LinearLayout>
