@@ -17,14 +17,14 @@
             </intent-filter>
         </activity>
 
-        <!--直播cmd service-->
+        <!--本地 service-->
         <service android:name=".service.LocalService">
             <intent-filter>
                 <action android:name=" com.aidl.myapplication.service.LocalService" />
             </intent-filter>
         </service>
 
-        <!--直播推流 service-->
+        <!--远程 service-->
         <service android:name=".service.TheRemoteService"
             android:process=":FruitLive"
             android:exported="true">
